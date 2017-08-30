@@ -1,0 +1,25 @@
+{
+    "name": "bhavinjr/eazypay",
+    "description": "This is icici eazypay payment gateway api",
+    "keywords": [
+      "laravel", "laravel 5", "icici", "icici payment", "eazypay", "laravel eazypay", "eazypay payment", "eazypay payment api","eazypay payment integration","eazypay payment laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bhavin Rudani",
+            "email": "bhavinrudani94@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.6.0",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*|5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bhavinjr\\Eazypay\\": "src/"
+        }
+    }
+}
