@@ -1,8 +1,8 @@
 # eazypay
 Eazypay payment integration for Laravel 5.*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-
+[![Total Downloads](https://poser.pugx.org/bhavinjr/eazypay/downloads)](https://packagist.org/packages/bhavinjr/eazypay)
+[![License](https://poser.pugx.org/bhavinjr/eazypay/license)](https://packagist.org/packages/bhavinjr/eazypay)
 ## Background: What is a eazypay?
 
 eazypay is a first of its kind secure payment service by ICICI Bank in India. It enables institutions to collect money from their customers through multiple payment modes. ICICI Bank is the first and only bank to offer such a payment service in India.
