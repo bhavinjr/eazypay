@@ -8,6 +8,7 @@ eazypay is a first of its kind secure payment service by ICICI Bank in India. It
 
 For more information visit,
 	https://eazypay.icicibank.com/info/aboutUs.html 
+	
 	https://eazypay.icicibank.com/homePage
 	
 
