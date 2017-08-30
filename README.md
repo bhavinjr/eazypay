@@ -44,12 +44,12 @@ class PaymentController extends Controller
 { 
     public function payment()
     {
-    	$amount 	=	10;
-    	$refrenceNo 	= 	1; //stands for order id or any other related to database table
+    	$amount 	=   10;
+    	$refrenceNo 	=   1; //stands for order id or any other related to database table
     	$optionalField 	=  '10|10|10|10'; (optional) //must be pass in pipe delimeter based on icici eazypay payment integration kit
 
-        $eazypay 	= new Eazypay();
-        $paymentUrl 	= $eazypay->getPaymentUrl($amount,$refrenceNo,$optionalField);
+        $eazypay 	=   new Eazypay();
+        $paymentUrl 	=   $eazypay->getPaymentUrl($amount,$refrenceNo,$optionalField);
         return redirect()->to($paymentUrl); //it will redirect to your payment gateway site
     }
 }
