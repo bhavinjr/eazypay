@@ -1,6 +1,16 @@
 # eazypay
 Eazypay payment integration for Laravel 5.*
 
+
+## Background: What is a eazypay?
+
+eazypay is a first of its kind secure payment service by ICICI Bank in India. It enables institutions to collect money from their customers through multiple payment modes. ICICI Bank is the first and only bank to offer such a payment service in India.
+
+For more information visit,
+	https://eazypay.icicibank.com/info/aboutUs.html
+	https://eazypay.icicibank.com/homePage
+	
+
 ## Installation
 
 First, you'll need to install the package via Composer:
@@ -31,11 +41,10 @@ php artisan vendor:publish --tag=config
 use Bhavinjr\Eazypay\Eazypay;
 
 class PaymentController extends Controller
-{
-   
+{ 
     public function payment()
     {
-    	$amount 		= 	10;
+    	$amount 		=	10;
     	$refrenceNo 	= 	1; //stands for order id or any other related to database table
     	$optionalField 	=  '10|10|10|10'; (optional) //must be pass in pipe delimeter based on icici eazypay payment integration kit
 
@@ -43,7 +52,6 @@ class PaymentController extends Controller
         $paymentUrl = $eazypay->getPaymentUrl($amount,$refrenceNo,$optionalField);
         return redirect()->to($paymentUrl); //it will redirect to your payment gateway site
     }
-
 }
 ```
 
@@ -57,12 +65,12 @@ must read `app/config/eazypay.php` file.
 
 ```<?php
 return [
-    'merchant_id'       =>  env('EAZYPAY_MERCHANT_ID'),
-    'encryption_key'    =>  env('EAZYPAY_ENCRYPTION_KEY'),
-    'return_url'        =>  env('EAZYPAY_RETURN_URL'),
-    'sub_merchant_id'   =>  env('EAZYPAY_MERCHANT_ID'),
-    'merchant_reference_no'      =>  env('EAZYPAY_MERCHANT_ID'),     
-    'paymode'           =>  env('EAZYPAY_PAYMODE',9),
+    'merchant_id'       		=>  env('EAZYPAY_MERCHANT_ID'),
+    'encryption_key'            =>  env('EAZYPAY_ENCRYPTION_KEY'),
+    'return_url'        		=>  env('EAZYPAY_RETURN_URL'),
+    'sub_merchant_id'   	    =>  env('EAZYPAY_MERCHANT_ID'),
+    'merchant_reference_no'     =>  env('EAZYPAY_MERCHANT_ID'),     
+    'paymode'           		=>  env('EAZYPAY_PAYMODE',9),
 
 ];
 ```
