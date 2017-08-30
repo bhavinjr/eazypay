@@ -7,6 +7,7 @@ Eazypay payment integration for Laravel 5.*
 eazypay is a first of its kind secure payment service by ICICI Bank in India. It enables institutions to collect money from their customers through multiple payment modes. ICICI Bank is the first and only bank to offer such a payment service in India.
 
 For more information visit,
+
 	https://eazypay.icicibank.com/info/aboutUs.html 
 	
 	https://eazypay.icicibank.com/homePage
