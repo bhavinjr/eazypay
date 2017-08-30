@@ -55,10 +55,8 @@ global configuration can be set in the `app/config/eazypay.php` file.
 make sure you have all the detail which needs to use in configuration file.
 must read `app/config/eazypay.php` file.
 
-<?php
-
+```<?php
 return [
-
     'merchant_id'       =>  env('EAZYPAY_MERCHANT_ID'),
     'encryption_key'    =>  env('EAZYPAY_ENCRYPTION_KEY'),
     'return_url'        =>  env('EAZYPAY_RETURN_URL'),
@@ -67,3 +65,4 @@ return [
     'paymode'           =>  env('EAZYPAY_PAYMODE',9),
 
 ];
+```
