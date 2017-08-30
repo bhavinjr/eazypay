@@ -63,7 +63,7 @@ Configuration was designed to be as flexible.
 global configuration can be set in the `app/config/eazypay.php` file.
 
 make sure you have all the detail which needs to use in configuration file.
-must read `app/config/eazypay.php` file.
+must read instruction in `app/config/eazypay.php` file.
 
 ```<?php
 return [
