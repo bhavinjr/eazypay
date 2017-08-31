@@ -21,12 +21,5 @@
         "psr-4": {
             "Bhavinjr\\Eazypay\\": "src/"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Bhavinjr\\Eazypay\\Providers\\ServiceProvider"
-            ]
-        }
     }
 }
