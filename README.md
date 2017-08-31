@@ -21,7 +21,7 @@ First, you'll need to install the package via Composer:
 $ composer require bhavinjr/eazypay
 ```
 
-Then, update `config/app.php` by adding an entry for the service provider.
+If you are don't use using Laravel 5.5.* Then, update `config/app.php` by adding an entry for the service provider.
 
 
 ```php
