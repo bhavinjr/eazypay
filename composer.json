@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bhavinjr\\Eazypay\\Providers\\EazypayServiceProvider"
+                "Bhavinjr\\Eazypay\\Providers\\ServiceProvider"
             ]
         }
     }
