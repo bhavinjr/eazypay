@@ -1,6 +1,7 @@
 # eazypay
 Eazypay payment integration for Laravel 5.*
 
+[![Latest Stable Version](https://poser.pugx.org/bhavinjr/eazypay/v/stable)](https://packagist.org/packages/bhavinjr/eazypay)
 [![Total Downloads](https://poser.pugx.org/bhavinjr/eazypay/downloads)](https://packagist.org/packages/bhavinjr/eazypay)
 [![License](https://poser.pugx.org/bhavinjr/eazypay/license)](https://packagist.org/packages/bhavinjr/eazypay)
 ## Background: What is a eazypay?
