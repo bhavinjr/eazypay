@@ -1,6 +1,7 @@
 # eazypay
 Eazypay payment integration for Laravel 5.*
 
+[![Latest Stable Version](https://poser.pugx.org/bhavinjr/eazypay/v/stable)](https://packagist.org/packages/bhavinjr/eazypay)
 [![Total Downloads](https://poser.pugx.org/bhavinjr/eazypay/downloads)](https://packagist.org/packages/bhavinjr/eazypay)
 [![License](https://poser.pugx.org/bhavinjr/eazypay/license)](https://packagist.org/packages/bhavinjr/eazypay)
 ## Background: What is a eazypay?
@@ -21,7 +22,7 @@ First, you'll need to install the package via Composer:
 $ composer require bhavinjr/eazypay
 ```
 
-Then, update `config/app.php` by adding an entry for the service provider.
+If you are don't use using Laravel 5.5.* Then, update `config/app.php` by adding an entry for the service provider.
 
 
 ```php
