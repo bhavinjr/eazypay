@@ -27,15 +27,16 @@ class Eazypay
         $mandatoryField   =    $this->getMandatoryField($amount, $reference_no);
         $optionalField    =    $this->getOptionalField($optionalField);
         $amount           =    $this->getAmount($amount);
+        $reference_no     =    $this->getReferenceNo($reference_no);
 
-        $paymentUrl = $this->generatePaymentUrl($mandatoryField, $optionalField, $amount);
+        $paymentUrl = $this->generatePaymentUrl($mandatoryField, $optionalField, $amount, $reference_no);
         return $paymentUrl;
         // return redirect()->to($paymentUrl);
     }
 
-    protected function generatePaymentUrl($mandatoryField, $optionalField, $amount)
+    protected function generatePaymentUrl($mandatoryField, $optionalField, $amount, $reference_no)
     {
-        $encryptedUrl = self::DEFAULT_BASE_URL."merchantid=".$this->merchant_id."&mandatory fields=".$mandatoryField."&optional fields=".$optionalField."&returnurl=".$this->getReturnUrl()."&Reference No=".$this->getReferenceNo()."&submerchantid=".$this->getSubMerchantId()."&transaction amount=".$amount."&paymode=".$this->getPaymode();
+        $encryptedUrl = self::DEFAULT_BASE_URL."merchantid=".$this->merchant_id."&mandatory fields=".$mandatoryField."&optional fields=".$optionalField."&returnurl=".$this->getReturnUrl()."&Reference No=".$reference_no."&submerchantid=".$this->getSubMerchantId()."&transaction amount=".$amount."&paymode=".$this->getPaymode();
 
         return $encryptedUrl;
     }
@@ -64,9 +65,9 @@ class Eazypay
         return $this->getEncryptValue($this->return_url);
     }
 
-    protected function getReferenceNo()
+    protected function getReferenceNo($reference_no)
     {
-        return $this->getEncryptValue($this->merchant_reference_no);
+        return $this->getEncryptValue($reference_no);
     }
 
     protected function getSubMerchantId()
