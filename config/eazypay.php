@@ -8,8 +8,7 @@ return [
 
     'return_url'        =>  env('EAZYPAY_RETURN_URL'),
 
-    // sub merchant id is always same as merchant id change value in case need
-    'sub_merchant_id'   =>  env('EAZYPAY_MERCHANT_ID'),
+    'sub_merchant_id'   =>  env('EAZYPAY_SUB_MERCHANT_ID'),
 
     /*
     |------------------------------------------------------------------------------------

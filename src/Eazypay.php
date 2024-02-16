@@ -10,7 +10,7 @@ class Eazypay
     public $paymode;
     public $return_url;
 
-    const DEFAULT_BASE_URL = 'https://eazypay.icicibank.com/EazyPG?';
+    const DEFAULT_BASE_URL = 'https://eazypayuat.icicibank.com/EazyPG?';
 
     public function __construct()
     {
@@ -80,12 +80,9 @@ class Eazypay
         return $this->getEncryptValue($this->paymode);
     }
 
-    // use @ to avoid php warning php throw warning while using mcrypt functions
     protected function getEncryptValue($str)
     {
-        $block = @mcrypt_get_block_size('rijndael_128', 'ecb');
-        $pad = $block - (strlen($str) % $block);
-        $str .= str_repeat(chr($pad), $pad);
-        return base64_encode(@mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $this->encryption_key, $str, MCRYPT_MODE_ECB));
+        $encrypted = openssl_encrypt($str, 'aes-128-ecb', $this->encryption_key, OPENSSL_RAW_DATA);
+       return base64_encode($encrypted);
     }
 }
